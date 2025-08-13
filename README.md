@@ -25,8 +25,8 @@ pip install -r requirements.txt
 run the .ipynb Notebook from begining. (I have commented the code for using the web source of the original resource)
 
 **Note:**
-This project uses ChatGroq (Groq Cloud free-tier). Most models there do not support structured ReAct tool-calling (Thought / Action / Observation).
-For full agentic transparency (recommended), use a model that supports ReAct-style structured calls via ZERO_SHOT_REACT_DESCRIPTION.
+- This project uses ChatGroq (Groq Cloud free-tier). Most models there do not support structured ReAct tool-calling (Thought / Action / Observation).
+- For full agentic transparency (recommended), use a model that supports ReAct-style structured calls via ZERO_SHOT_REACT_DESCRIPTION.
 
 
 
