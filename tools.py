@@ -1,6 +1,6 @@
 from langchain.tools import Tool
-from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
@@ -32,7 +32,7 @@ retriever_tool = Tool(
 
 prompt_llm = ChatGroq(
     api_key=os.environ.get("GROQ_API_KEY"),
-    model="openai/gpt-oss-20b"
+    model="llama-3.1-8b-instant"
 )
 
 def prompt_generator_func(query: str) -> str:
